@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Integrador</title>
@@ -13,90 +13,118 @@
     <header>
         <nav>
             <ul class="menu">
-                <li><a href="">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#consolas">Consolas</a></li>
                 <li><a href="#Juegos">Juegos</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a href="./Paginas/Contacto.html">Contacto</a></li>
                 </ul>
         </nav>
     </header>
-    <section id="Bienvenida">
-        <h1>Bienvenido a la Página de Inicio</h1>
-        <p>Las consolas de videojuegos han evolucionado a lo largo de los años, convirtiéndose en una parte fundamental
-            de la industria del entretenimiento. Aquí, podrás explorar la historia de las tres marcas más importantes:
-            PlayStation, Nintendo y Xbox. Cada una ha tenido un impacto significativo en la cultura de los videojuegos y
-            ha dejado una huella imborrable.</p>
-    </section>
-    <!--Carrusel -->
-    <section class="Carrusel">
-        <img id="imgCarrusel" src="Imagenes/Playstation carrusel.jpg" alt="Imagen-Carrusel">
-        <div class="Botones del Carrusel ">
-            <button id="Anterior">Anterior</button>
-            <button id="Siguiente">Siguiente</button>
+
+<!-- bienvenida -->
+
+        <div class="contenedor-bienvenida">
+        <section class="bienvenida">
+            <h1>Bienvenido a la Página de Inicio</h1>
+            <p>Las consolas de videojuegos han evolucionado a lo largo de los años, convirtiéndose en una parte fundamental
+                de la industria del entretenimiento. Aquí, podrás explorar la historia de las tres marcas más importantes:
+                PlayStation, Nintendo y Xbox. Cada una ha tenido un impacto significativo en la cultura de los videojuegos y
+                ha dejado una huella imborrable.</p>
+            </section>
         </div>
-    </section>
+
+            <!--Carrusel -->
+
+    <div class="contenedor-carr">
+        <section class="carrusel">
+            <img id="imgCarrusel" src="Imagenes/Playstation carrusel.jpg" alt="Imagen-Carrusel">
+        </section>
+        <div class="botones-carrusel ">
+            <button id="Anterior"><</button>
+            <button id="Siguiente">></button>
+        </div>
+    </div>
+    
     <!-- Consolas -->
-    <section id="consolas" class ="Consola">
-        <!-- PlayStation -->
-        <div class="Tarjeta" id="playstation">
-            <h2>PlayStation</h2>
-            <p>La marca PlayStation, lanzada por Sony en 1994.</p>
-            <img src="Imagenes/Logo-Play.png" alt="PlayStation Logo">
-            <a href="./Paginas/playstation.html">Explorar PlayStation</a>
-        </div>
-        <!-- Nintendo -->
-        <div class="Tarjeta" id="nintendo">
-            <h2>Nintendo</h2>
-            <p>Nintendo es una de las empresas más antiguas en el mundo de los videojuegos. Fundada en 1889,
-                se destaca por sus juegos de plataforma como mario.</p>
-                <img src="Imagenes/Logo-nintendo.png" alt="Nintendo Logo">
-            <a href="Paginas/nintendo.html">Explorar Nintendo</a>
-        </div>
-        <!-- Xbox -->
-        <div class="Tarjeta" id="xbox">
-            <h2>Xbox</h2>
-            <p>Microsoft entró en el mundo de los videojuegos con la Xbox original en 2001.</p>
-            <img src="Imagenes/Logo-Xbox.png" alt="Xbox Logo">
-            <a href="Paginas/xbox.html">Explorar Xbox</a>
-        </div>
-    </section>
-    <!-- Juegos-->
-    <section id="Juegos" class="Juegos">
-        <h2>Juegos</h2>
-        <p>Informacion sobre los juegos exclusivos de cada consola</p>
-        <!-- Playstation-->
-        <h3 id="PlayJ">Playstation</h3>
-        <div> 
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <!-- Xbox -->
-        <h3 id="XboxJ">Xbox</h3>
-        <div> 
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <!-- Nintendo -->
-        <h3 id="NintendoJ">Nintendo</h3>
-        <div> 
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
 
-    </section>
+    <div class="contenedor-consola">
+        <section id="consolas">
 
-    <!-- Footer -->
+            <!-- PlayStation -->
 
-    <footer class="footer">
-        <div class="Contenedor">
-            <div class="menu-footer">
-                <div class="Info-Contacto">
-                    <p class="Titulo">Información de Contacto</p>
-                    <ul>
-                        <li>Email: htrrodrigo9@gmail.com</li>
+            <div class="tarjeta" id="playstation">
+                <img src="Imagenes/Logo-Play.png" alt="PlayStation Logo">
+                <h2>PlayStation</h2>
+                <p>La marca PlayStation, lanzada por Sony en 1994.</p>
+                <a href="./Paginas/playstation.html">Explorar PlayStation</a>
+            </div>
+
+                <!-- Nintendo -->
+
+                <div class="tarjeta" id="nintendo">
+                    <img src="Imagenes/Logo-nintendo.png" alt="Nintendo Logo">
+                    <h2>Nintendo</h2>
+                    <p>Nintendo es una de las empresas más antiguas en el mundo de los videojuegos. Fundada en 1889.</p>
+                    <a href="./Paginas/nintendo.html">Explorar Nintendo</a>
+                </div>
+
+                    <!-- Xbox -->
+
+                    <div class="tarjeta" id="xbox">
+                        <img src="Imagenes/Logo-Xbox.png" alt="Xbox Logo">
+                        <h2>Xbox</h2>
+                        <p>Microsoft entró en el mundo de los videojuegos con la Xbox original en 2001.</p>
+                        <a href="./Paginas/xbox.html">Explorar Xbox</a>
+                    </div>
+                </section>
+    </div>
+                
+                <!-- Juegos-->
+                
+    <div>
+        <section id="Juegos" class="Juegos">
+            <h2>Juegos</h2>
+            <p>Informacion sobre los juegos exclusivos de cada consola</p>
+            
+            <!-- Playstation-->
+            
+            <h3 id="PlayJ">Playstation</h3>
+            <div> 
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            
+            <!-- Xbox -->
+            
+            <h3 id="XboxJ">Xbox</h3>
+            <div> 
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
+            
+            <!-- Nintendo -->
+            
+            <h3 id="NintendoJ">Nintendo</h3>
+            <div> 
+                        <img src="" alt="">
+                        <img src="" alt="">
+                        <img src="" alt="">
+                    </div>
+                    
+                </section>
+            </div>
+                
+                <!-- Footer -->
+                
+                <footer class="footer">
+                    <div class="Contenedor">
+                        <div class="menu-footer">
+                            <div class="Info-Contacto">
+                                <p class="Titulo">Información de Contacto</p>
+                                <ul>
+                                    <li>Email: htrrodrigo9@gmail.com</li>
                         <li>Email: santiagolara1242@gmail.com </li>
                     </ul>
                     <ul>
@@ -108,8 +136,11 @@
                 <a href="Paginas/Contacto.html">Registrate</a>
             </div>
         </div>
+
     </footer>
+
     <script src="Java.js"></script>
+
 </body>
 
 </html>
