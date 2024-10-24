@@ -2,25 +2,72 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="/Styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
 <body>
-    <form id="contacto">>
-        <label for="nombre">Nombre Completo:</label>
+    <form id="contacto" novalidate>
+        <p><label for="nombre">Nombre Completo:</label></p>
         <input type="text" id="nombre" name="nombre">
         <span id="error-nombre" class="error"></span>
 
-        <label for="Correo">Correo Electrónico:</label>
-        <input type="email" id="Correo" name="Correo">
+        <p><label for="correo">Correo Electrónico:</label></p>
+        <input type="email" id="correo" name="correo" >
         <span id="error-email" class="error"></span>
 
-        <label for="telefono">Teléfono:</label>
+        <p><label for="telefono">Teléfono:</label></p>
         <input type="tel" id="telefono" name="telefono">
-        <span id="error-telefono" class="error"></span>
-        </form>
+        <span id="error-telefono" class="error"></span><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="RegistroValido"></div>
+    <script>
+        document.getElementById('contacto').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const nombre = document.getElementById('nombre').value.trim();
+            const correo = document.getElementById('correo').value.trim();
+            const telefono = document.getElementById('telefono').value.trim();
+
+            document.getElementById('error-nombre').textContent = '';
+            document.getElementById('error-email').textContent = '';
+            document.getElementById('error-telefono').textContent = '';
+            let errores = false;
+
+            if (nombre == '' || nombre.length > 50) {
+                errores = true;
+                document.getElementById('error-nombre').textContent = 'Nombre completo es obligatorio y no debe ser mayor a 50 caracteres';
+            }
+            if (!/\S+@\S+\.\S+/.test(correo)) {
+                errores = true;
+                document.getElementById('error-email').textContent = 'El correo electrónico no es valido';
+            }
+            if (!/^(\d[\s-()]*){10,15}$/.test(telefono)) {
+                errores = true;
+                document.getElementById('error-telefono').textContent = 'El teléfono debe tener entre 10 y 15 dígitos';
+            }
+            if (!errores) {
+                const datosEnviados = document.createElement('div');
+                datosEnviados.classList.add('datos-enviados');
+
+                const NombreValido = document.createElement('p');
+                NombreValido.textContent = `Nombre completo: ${nombre}`;
+                datosEnviados.appendChild(NombreValido);
+
+                const CorreoValido = document.createElement('p');
+                CorreoValido.textContent = `Correo Electronico: ${correo}`;
+                datosEnviados.appendChild(CorreoValido);
+
+                const TelefonoValido = document.createElement('p');
+                TelefonoValido.textContent = `Teléfono: ${telefono}`;
+                datosEnviados.appendChild(TelefonoValido);
+                RegistroValido.appendChild(datosEnviados);
+            }
+        });
+    </script>
 </body>
 
 </html>
