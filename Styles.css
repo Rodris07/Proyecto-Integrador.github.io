@@ -11,18 +11,43 @@
 .error {
     color: red;
 }
-
-body {
+html{
     font-family: Arial, sans-serif;
 }
+body{
+    background-image: url(./Imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* header/nav */
-nav {
+.navbar {
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     background-color: #084fd3;
     padding: 10px 0;
-}
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+}
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo{
+    height: 50px;
+    margin-right: 10px;
+}
+.nombre-pagina{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+}
 .menu {
     list-style-type: none;
     margin: 0;
@@ -53,7 +78,7 @@ nav {
 .contenedor-bienvenida{
     background-color: #f1e1cc;
     padding: 10px;
-    margin: 5px auto;
+    margin: 15px auto;
     width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -78,7 +103,8 @@ nav {
 
 .contenedor-carr{
     width: 80%;
-    margin: 20px auto;
+    margin: 15px auto;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -102,7 +128,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 140px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .botones-carrusel button{
     background-color: var(--primary-color);
@@ -151,7 +177,7 @@ nav {
     justify-content: space-around;
 }
 .tarjeta:hover {
-    transform: scale(1.05); /* Ampliar ligeramente al pasar el ratón */
+    transform: scale(1.05); 
 }
 .tarjeta img{
     max-width: 80%;
@@ -176,30 +202,100 @@ nav {
 .tarjeta a:hover{
     background-color: #674ab4;
 }
+
 /* Fin Consolas */
+/* Juegos exclusivos */
+.contenedor-juegos{
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f1e1cc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.juegos h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+.juegoxmarca{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.juegoxmarca h3{
+    font-size: 1.8rem;
+    color: black;
+    margin-bottom: 15px;
+}
+.muestra{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.muestra img{
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+.muestra img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+/* FOOTER */
 .footer {
     background-color: var(--secondary-color);
     color: black;
     padding: 20px 0;
 }
 
-.Contenedor {
+.contenedor-footer {
     display: flex;
     justify-content: space-around;
+    align-items: flex-start ;
+    padding: 0 30px;
 }
-
+.info-footer{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.info-contacto ul{
+    list-style-type: none;
+    padding: 0;
+}
+.info-contacto{
+    text-align: center;
+}
+.info-desarrollo{
+    text-align: center;
+}
+.info-contacto, .menu-footer, .info-desarrollo {
+    flex: 1;
+} 
 .menu-footer {
-    text-align: left;
+    text-align: center;
 }
 
 .menu-footer ul {
     list-style: none;
     padding: 0;
 }
-
+.menu-footer ul li, .info-contacto ul li{
+    margin: 5px 0;
+}
 .menu-footer a {
     color: var(--primary-color);
     text-decoration: none;
+
 }
 
 .menu-footer a:hover {

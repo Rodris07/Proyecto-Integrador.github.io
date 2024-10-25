@@ -11,29 +11,36 @@
 <body>
     <!-- navbar -->
     <header>
-        <nav>
+        <nav class="navbar">
+            <a href="index.html" class="contenedor-logo">
+                <img src="./Imagenes/icono-joystick.png" alt="Logo icono" class="logo">
+                <span class="nombre-pagina">FREAK-GEN</span>
+            </a>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#consolas">Consolas</a></li>
                 <li><a href="#Juegos">Juegos</a></li>
                 <li><a href="./Paginas/Contacto.html">Contacto</a></li>
-                </ul>
+            </ul>
         </nav>
     </header>
 
-<!-- bienvenida -->
+    <!-- bienvenida -->
 
-        <div class="contenedor-bienvenida">
+    <div class="contenedor-bienvenida">
         <section class="bienvenida">
-            <h1>Bienvenido a la Página de Inicio</h1>
-            <p>Las consolas de videojuegos han evolucionado a lo largo de los años, convirtiéndose en una parte fundamental
-                de la industria del entretenimiento. Aquí, podrás explorar la historia de las tres marcas más importantes:
-                PlayStation, Nintendo y Xbox. Cada una ha tenido un impacto significativo en la cultura de los videojuegos y
-                ha dejado una huella imborrable.</p>
-            </section>
-        </div>
+            <h1>Bienvenido a Freak-Gen</h1>
+            <p>Si eres un verdadero fan de los videojuegos y disfrutas explorando la evolución de tus consolas
+                favoritas, ¡has llegado al lugar indicado! Aquí podrás sumergirte en la historia de las consolas más
+                icónicas: PlayStation, Nintendo y Xbox. A través de una línea del tiempo interactiva, te llevaremos
+                desde los inicios hasta las últimas innovaciones de cada marca, para que descubras cómo estas
+                legendarias máquinas han marcado la historia del gaming.
+                Prepárate para un viaje geek en el que cada consola tiene una historia que contar. ¡Explora y revive las
+                eras que definieron tu pasión por los videojuegos!</p>
+        </section>
+    </div>
 
-            <!--Carrusel -->
+    <!--Carrusel -->
 
     <div class="contenedor-carr">
         <section class="carrusel">
@@ -44,7 +51,7 @@
             <button id="Siguiente">></button>
         </div>
     </div>
-    
+
     <!-- Consolas -->
 
     <div class="contenedor-consola">
@@ -59,87 +66,142 @@
                 <a href="./Paginas/playstation.html">Explorar PlayStation</a>
             </div>
 
-                <!-- Nintendo -->
-
-                <div class="tarjeta" id="nintendo">
-                    <img src="Imagenes/Logo-nintendo.png" alt="Nintendo Logo">
-                    <h2>Nintendo</h2>
-                    <p>Nintendo es una de las empresas más antiguas en el mundo de los videojuegos. Fundada en 1889.</p>
-                    <a href="./Paginas/nintendo.html">Explorar Nintendo</a>
-                </div>
-
-                    <!-- Xbox -->
-
-                    <div class="tarjeta" id="xbox">
-                        <img src="Imagenes/Logo-Xbox.png" alt="Xbox Logo">
-                        <h2>Xbox</h2>
-                        <p>Microsoft entró en el mundo de los videojuegos con la Xbox original en 2001.</p>
-                        <a href="./Paginas/xbox.html">Explorar Xbox</a>
-                    </div>
-                </section>
-    </div>
-                
-                <!-- Juegos-->
-                
-    <div>
-        <section id="Juegos" class="Juegos">
-            <h2>Juegos</h2>
-            <p>Informacion sobre los juegos exclusivos de cada consola</p>
-            
-            <!-- Playstation-->
-            
-            <h3 id="PlayJ">Playstation</h3>
-            <div> 
-                <img src="/Imagenes/The_Last_of_Us_Part 2.png" alt="Tlou"><br>
-
-                <img src="/Imagenes/God of war portada.png" alt="God"><br>
-
-                <img src="/Imagenes/Uncharted 4.png" alt="Uncharted">
-            </div>
-            
-            <!-- Xbox -->
-            
-            <h3 id="XboxJ">Xbox</h3>
-            <div> 
-                <img src="/Imagenes/Halo.png" alt="Halo"><br>
-
-                <img src="/Imagenes/Gears.png" alt="Gears"><br>
-
-                <img src="/Imagenes/Forza.png" alt="Forza"><br>
-            </div>
-            
             <!-- Nintendo -->
-            
-            <h3 id="NintendoJ">Nintendo</h3>
-            <div> 
-                        <img src="/Imagenes/Super mario odyssey.png" alt="mario"><br>
- 
-                        <img src="/Imagenes/Smash Bros.png" alt="Smash"><br>
 
-                        <img src="/Imagenes/Legen of Zelda.png" alt="Zelda"><br>
+            <div class="tarjeta" id="nintendo">
+                <img src="Imagenes/Logo-nintendo.png" alt="Nintendo Logo">
+                <h2>Nintendo</h2>
+                <p>Nintendo es una de las empresas más antiguas en el mundo de los videojuegos. Fundada en 1889.</p>
+                <a href="./Paginas/nintendo.html">Explorar Nintendo</a>
+            </div>
+
+            <!-- Xbox -->
+
+            <div class="tarjeta" id="xbox">
+                <img src="Imagenes/Logo-Xbox.png" alt="Xbox Logo">
+                <h2>Xbox</h2>
+                <p>Microsoft entró en el mundo de los videojuegos con la Xbox original en 2001.</p>
+                <a href="./Paginas/xbox.html">Explorar Xbox</a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Juegos-->
+
+    <div class="contenedor-juegos">
+        <section id="juegos" class="juegos">
+            <h2>Juegos Más Conocidos de Cada Marca</h2>
+
+            <!-- Playstation-->
+            <div class="juegoxmarca">
+                <h3 id="PlayJ">Playstation</h3>
+                    <div class="muestra">
+                        <div class="juego">
+                        <img src="./Imagenes/9803854-the-last-of-us-part-ii-playstation-4-front-cover.jpg" alt="Tlou">
+                        <p><strong>The Las of Us Part II</strong></p>
+                        </div>
+                        <div class="juego">
+                        <img src="./Imagenes/8019897-god-of-war-playstation-4-front-cover.jpg" alt="God">
+                        <p><strong>God of War</strong></p>
+                        </div>
+                        <div class="juego">
+                        <img src="./Imagenes/10095070-uncharted-4-a-thiefs-end-playstation-4-front-cover.jpg" alt="Uncharted">
+                        <p><strong>Uncharted 4: A Thief's End</strong></p>
+                        </div>
+                        <div class="juego">
+                        <img src="./Imagenes/7242748-marvel-spider-man-playstation-4-front-cover.jpg" alt="Marvels Spider-Man">
+                        <p><strong>Marvel's Spider-Man</strong></p>
+                        </div>
+                        <div class="juego">
+                        <img src="./Imagenes/10754016-gran-turismo-7-playstation-5-front-cover.jpg" alt="Gran turismo 7">
+                        <p><strong>Gran Turismo 7</strong></p>
+                        </div>
                     </div>
-                    
-                </section>
             </div>
                 
-                <!-- Footer -->
-                
-                <footer class="footer">
-                    <div class="Contenedor">
-                        <div class="menu-footer">
-                            <div class="Info-Contacto">
-                                <p class="Titulo">Información de Contacto</p>
-                                <ul>
-                                    <li>Email: htrrodrigo9@gmail.com</li>
-                        <li>Email: santiagolara1242@gmail.com </li>
-                    </ul>
-                    <ul>
-                        <li><a href="#consolas">Consolas</a></li>
-                        <li><a href="#Juegos">Juegos</a></li>
-                        <li><a href="#Inicio">Inicio</a></li>
-                    </ul>
+            <!-- Nintendo -->
+            <div class="juegoxmarca">
+                <h3 id="NintendoJ">Nintendo</h3>
+                <div class="muestra">
+                    <div class="juego">
+                        <img src="./Imagenes/10038039-super-mario-odyssey-nintendo-switch-front-cover.jpg" alt="Mario">
+                        <p><strong>Super Mario Odyssey</strong></p>
+                    </div>
+                    <div class="juego">
+                        <img src="./Imagenes/4298102-super-smash-bros-ultimate-nintendo-switch-front-cover.jpg" alt="Smash Bros">
+                        <p><strong>Super Smash Bros</strong></p>
+                    </div>
+                    <div class="juego">
+                        <img src="./Imagenes/8437180-the-legend-of-zelda-breath-of-the-wild-nintendo-switch-front-cov.jpg" alt="Legend of Zelda">
+                        <p><strong>Legend of Zelda: Breath of the Wild</strong></p>
+                    </div>
+                    <div class="juego">
+                        <img src="./Imagenes/15551820-metroid-prime-remastered-nintendo-switch-front-cover.jpg" alt="metroid prime remastered">
+                        <p><strong>Metroid Prime Remastered</strong></p>
+                    </div>
+                    <div class="juego">
+                        <img src="./Imagenes/3083380-animal-crossing-new-horizons-nintendo-switch-front-cover.jpg" alt="Animal crossing new horizons">
+                        <p><strong>Animal Crossing: New Horizons</strong></p>
+                    </div>
                 </div>
-                <a href="Paginas/Contacto.html">Registrate</a>
+            </div>
+
+        <!-- Xbox -->
+        
+        <div class="juegoxmarca">
+            <h3 id="XboxJ">Xbox</h3>
+        <div class="muestra">
+            <div class="juego">
+                <img src="./Imagenes/11144043-halo-infinite-campaign-xbox-one-front-cover.jpg" alt="Halo Infinite">
+                <p><strong>Halo Infinite</strong></p>
+            </div>
+            <div class="juego">
+                <img src="./Imagenes/11074567-gears-5-xbox-one-front-cover.jpg" alt="Gears 5">
+                <p><strong>Gears of War 5</strong></p>
+            </div>
+            <div class="juego">
+                <img src="./Imagenes/10095777-forza-horizon-5-windows-apps-front-cover.jpg" alt="Forza Horizon 5">
+                <p><strong>Forza Horizon 5 </strong></p>
+            </div>
+            <div class="juego">
+                <img src="./Imagenes/8299565-sea-of-thieves-xbox-one-front-cover.png" alt="Sea of thieves">
+                <p><strong>Sea of Thieves</strong></p>
+            </div>
+            <div class="juego">
+                <img src="./Imagenes/4183487-fable-xbox-front-cover.jpg" alt="Fable">
+                <p><strong>Fable</strong></p>
+            </div>
+        </div>
+    </div>
+    </section>
+</div>
+        
+    <!-- Footer -->
+
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="info-contacto">
+                <p class="info-footer">Información de Contacto</p>
+                <ul>
+                    <li>Email: htrrodrigo9@gmail.com</li>
+                    <li>Email: santiagolara1242@gmail.com </li>
+                </ul>
+            </div>
+
+            <div class="info-desarrollo">
+                <p>Todos los derechos reservados 2024 &copy;</p>
+                <p>Desarrollado por:</p>
+                <p>Rodrigo Guerrero</p>
+                <p>Santiago Lara</p>
+            </div>
+
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#consolas">Consolas</a></li>
+                    <li><a href="#Juegos">Juegos</a></li>
+                    <li><a href="./Paginas/Contacto.html">Contacto</a></li>
+                </ul>
             </div>
         </div>
 
