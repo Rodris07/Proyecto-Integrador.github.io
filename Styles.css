@@ -243,12 +243,6 @@ body{
     transform: scale(1.05);
 }
 
-
-
-
-
-
-
 /* FOOTER */
 .footer {
     background-color: var(--secondary-color);
@@ -301,12 +295,80 @@ body{
     text-decoration: underline;
 }
 
-/*Pagina Play*/
+/*Fondo para la Paginas de consolas*/
 .Play {
-    background-image: url('/Imagenes/Fondo\ azul.jpg'); 
+    background-image: url('/Imagenes/Fondo\ playstation.png'); 
     background-size: cover;
     background-repeat: no-repeat;
 }
+.xbox {
+    background-image: url('/Imagenes/Fondo\ xbox.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Nintendo {
+    background-image: url('/Imagenes/Fondo\ nintendo.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Diseño de las paginas de consolas */
+.cronologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+}
+.consolaspaginas{
+    background-color: #f1e1cc;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+.cronologia h1 {
+    background-color:rgba(233, 233, 235, 0.377) ;
+    padding: 20px; 
+    color: black; 
+    margin-bottom: 30px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.consolaspaginas p {
+font-size: 1.5em;
+}
+.consolaspaginas h2 {
+    color: #084fd3; 
+    font-size: 2em;
+}
+.consolaspaginas img {
+    max-width: 35%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.especificaciones {
+    margin-top: 10px;
+}
+.especificaciones h3 {
+    font-size: 2em; 
+}
+.especificaciones ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.especificaciones li {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.especificaciones strong {
+font-size: 1em;
+}
+
 /*Formulario de Contacto body */
 .Fcontacto {
     font-family: Arial, sans-serif;
