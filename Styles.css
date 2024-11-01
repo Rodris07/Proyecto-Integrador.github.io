@@ -297,17 +297,17 @@ body{
 
 /*Fondo para la Paginas de consolas*/
 .Play {
-    background-image: url('/Imagenes/Fondo\ playstation.png'); 
+    background-image: url('./Imagenes/Fondo\ playstation.png'); 
     background-size: cover;
     background-repeat: no-repeat;
 }
 .xbox {
-    background-image: url('/Imagenes/Fondo\ xbox.png'); 
+    background-image: url('./Imagenes/Fondo\ xbox.png'); 
     background-size: cover;
     background-repeat: no-repeat;
 }
 .Nintendo {
-    background-image: url('/Imagenes/Fondo\ nintendo.jpg'); 
+    background-image: url('./Imagenes/Fondo\ nintendo.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
 }
